@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstração - OS IRMÃOS Anti-Bullying</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+        }
+        
+        .header {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            color: #667eea;
+            margin: 0 0 10px 0;
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 18px;
+            margin: 0;
+        }
+        
+        .demo-section {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .demo-section h2 {
+            color: #5a67d8;
+            border-bottom: 2px solid #5a67d8;
+            padding-bottom: 10px;
+        }
+        
+        .test-area {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #e53e3e;
+            margin: 15px 0;
+        }
+        
+        .test-area textarea {
+            width: 100%;
+            height: 100px;
+            padding: 15px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: inherit;
+            resize: vertical;
+            box-sizing: border-box;
+        }
+        
+        .test-area textarea:focus {
+            outline: none;
+            border-color: #5a67d8;
+        }
+        
+        .test-words {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .test-word {
+            background: #e53e3e;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .test-word:hover {
+            background: #c53030;
+        }
+        
+        .instructions {
+            background: linear-gradient(135deg, #e6fffa, #b2f5ea);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #38b2ac;
+        }
+        
+        .instructions h3 {
+            color: #2c7a7b;
+            margin-top: 0;
+        }
+        
+        .instructions ol {
+            color: #2d3748;
+            line-height: 1.6;
+        }
+        
+        .warning {
+            background: linear-gradient(135deg, #fed7d7, #feb2b2);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #e53e3e;
+            text-align: center;
+        }
+        
+        .warning h3 {
+            color: #e53e3e;
+            margin-top: 0;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 12px;
+        }
+        
+        .footer h2 {
+            margin: 0 0 10px 0;
+        }
+        
+        .footer p {
+            margin: 0;
+            opacity: 0.9;
+        }
+        
+        .comments-section {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .comment {
+            background: white;
+            border-radius: 6px;
+            padding: 12px;
+            margin: 10px 0;
+            border-left: 3px solid #6c757d;
+        }
+        
+        .comment-user {
+            font-weight: bold;
+            color: #495057;
+            margin-bottom: 5px;
+        }
+        
+        .comment-text {
+            color: #6c757d;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🤝 OS IRMÃOS - Anti-Bullying</h1>
+        <p>Página de Demonstração da Extensão</p>
+    </div>
+
+    <div class="demo-section">
+        <h2>📋 Como Testar a Extensão</h2>
+        <div class="instructions">
+            <h3>🔧 Passo a Passo:</h3>
+            <ol>
+                <li><strong>Instale a extensão</strong> seguindo as instruções do arquivo INSTALL.md</li>
+                <li><strong>Faça login</strong> na extensão com a senha "osirmaos"</li>
+                <li><strong>Digite algumas palavras</strong> de teste nas áreas abaixo</li>
+                <li><strong>Observe</strong> como as palavras são bloqueadas e substituídas</li>
+                <li><strong>Veja</strong> o popup educativo que aparece automaticamente</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>✍️ Área de Teste - Campo de Texto</h2>
+        <p>Digite palavras ofensivas neste campo para ver a extensão em ação:</p>
+        <div class="test-area">
+            <textarea placeholder="Digite aqui para testar a extensão... Experimente palavras como: idiota, burro, estúpido, etc."></textarea>
+            <div class="test-words">
+                <span class="test-word" onclick="addTestWord(this)">idiota</span>
+                <span class="test-word" onclick="addTestWord(this)">burro</span>
+                <span class="test-word" onclick="addTestWord(this)">estúpido</span>
+                <span class="test-word" onclick="addTestWord(this)">feio</span>
+                <span class="test-word" onclick="addTestWord(this)">gordo</span>
+                <span class="test-word" onclick="addTestWord(this)">inútil</span>
+            </div>
+            <small style="color: #666; margin-top: 10px; display: block;">
+                💡 Clique nas palavras acima para testá-las rapidamente
+            </small>
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>💬 Seção de Comentários Simulada</h2>
+        <p>Esta seção simula comentários em redes sociais onde o bullying pode ocorrer:</p>
+        
+        <div class="comments-section">
+            <h4>💭 Comentários da Postagem</h4>
+            
+            <div class="comment">
+                <div class="comment-user">👤 Usuário Teste 1</div>
+                <div class="comment-text">Que legal essa iniciativa! Estou digitando uma palavra ofensiva para testar: idiota</div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-user">👤 Usuário Teste 2</div>
+                <div class="comment-text">Vou testar também: você é muito burro para entender isso</div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-user">👤 Usuário Teste 3</div>
+                <div class="comment-text">Que estúpido esse comentário anterior! Teste da extensão funcionando</div>
+            </div>
+            
+            <textarea placeholder="Escreva seu comentário aqui... Teste palavras como: lixo, patético, ridículo" style="width: 100%; height: 60px; padding: 10px; border: 1px solid #ddd; border-radius: 4px; margin-top: 10px; box-sizing: border-box;"></textarea>
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>🎯 Conteúdo com Palavras de Teste</h2>
+        <p>Os parágrafos abaixo contêm palavras que deveriam ser bloqueadas pela extensão:</p>
+        
+        <div style="background: #fff3cd; padding: 15px; border-radius: 8px; border-left: 4px solid #ffc107;">
+            <p>Este é um texto de exemplo onde alguém poderia escrever: "Você é um idiota e muito burro para entender matemática."</p>
+            <p>Outro exemplo: "Que pessoa estúpida e feia! Ela é completamente inútil na escola."</p>
+            <p>Teste adicional: "Todos pensam que você é ridículo e patético, um verdadeiro lixo."</p>
+        </div>
+    </div>
+
+    <div class="warning">
+        <h3>⚠️ ATENÇÃO</h3>
+        <p><strong>Este é apenas um teste!</strong></p>
+        <p>As palavras aqui são usadas exclusivamente para demonstrar como a extensão funciona.</p>
+        <p>Não toleramos nem incentivamos o uso de linguagem ofensiva.</p>
+    </div>
+
+    <div class="demo-section">
+        <h2>📊 O Que Observar</h2>
+        <div style="background: #e6fffa; padding: 20px; border-radius: 8px; border-left: 4px solid #38b2ac;">
+            <h3>✅ Se a extensão estiver funcionando, você verá:</h3>
+            <ul>
+                <li>🔹 Palavras ofensivas substituídas por símbolos (●●●●●)</li>
+                <li>🔹 Texto com fundo destacado onde palavras foram bloqueadas</li>
+                <li>🔹 Um popup grande com mensagem educativa sobre cyberbullying</li>
+                <li>🔹 Informações sobre leis brasileiras contra bullying</li>
+                <li>🔹 Canais de ajuda e suporte</li>
+                <li>🔹 Mensagem final sobre o "Grupo OS IRMÃOS"</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>🤝 Procure o Grupo OS IRMÃOS que eles podem te ajudar!</h2>
+        <p>Juntos somos mais fortes contra o bullying e cyberbullying!</p>
+    </div>
+
+    <script>
+        function addTestWord(element) {
+            const textarea = document.querySelector('textarea');
+            const word = element.textContent;
+            if (textarea.value) {
+                textarea.value += ' ' + word;
+            } else {
+                textarea.value = word;
+            }
+            textarea.focus();
+            
+            // Simular evento de digitação para ativar a extensão
+            const event = new Event('input', { bubbles: true });
+            textarea.dispatchEvent(event);
+        }
+        
+        // Log para debug
+        console.log('OS IRMÃOS - Página de demonstração carregada!');
+        console.log('Se a extensão estiver ativa, você verá mensagens de bloqueio no console.');
+        
+        // Detectar se a extensão está ativa
+        setTimeout(() => {
+            if (typeof window.antiBullyingExtensionActive === 'undefined') {
+                console.warn('⚠️ Extensão OS IRMÃOS não detectada. Certifique-se de que está instalada e ativa.');
+            } else {
+                console.log('✅ Extensão OS IRMÃOS detectada e funcionando!');
+            }
+        }, 2000);
+    </script>
+</body>
+</html>

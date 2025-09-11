@@ -1,0 +1,263 @@
+/* Styles para o modal de conscientização anti-bullying */
+.anti-bullying-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2147483647;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.anti-bullying-modal {
+    background: white;
+    border-radius: 20px;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.3s ease-out;
+    border: 5px solid #e53e3e;
+}
+
+.anti-bullying-modal-content {
+    padding: 30px;
+}
+
+.anti-bullying-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #e53e3e;
+}
+
+.anti-bullying-icon {
+    font-size: 60px;
+    margin-bottom: 15px;
+    animation: pulse 2s infinite;
+}
+
+.anti-bullying-header h1 {
+    color: #e53e3e;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.anti-bullying-message {
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2d3748;
+}
+
+.anti-bullying-message h2 {
+    color: #e53e3e;
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background: linear-gradient(135deg, #fed7d7, #feb2b2);
+    border-radius: 12px;
+    border-left: 5px solid #e53e3e;
+}
+
+.anti-bullying-message h3 {
+    color: #2b6cb0;
+    font-size: 20px;
+    margin: 25px 0 15px 0;
+    border-bottom: 2px solid #2b6cb0;
+    padding-bottom: 8px;
+}
+
+.anti-bullying-message p {
+    font-size: 16px;
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.anti-bullying-message ul {
+    padding-left: 25px;
+    margin: 15px 0;
+}
+
+.anti-bullying-message li {
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+.law-section {
+    background: #f7fafc;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 5px solid #2b6cb0;
+    margin: 20px 0;
+}
+
+.empathy-section {
+    background: linear-gradient(135deg, #e6fffa, #b2f5ea);
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 5px solid #38b2ac;
+    margin: 20px 0;
+}
+
+.consequences-section {
+    background: linear-gradient(135deg, #fffaf0, #fef5e7);
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 5px solid #ed8936;
+    margin: 20px 0;
+}
+
+.help-section {
+    background: linear-gradient(135deg, #f0fff4, #c6f6d5);
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 5px solid #48bb78;
+    margin: 20px 0;
+}
+
+.help-contacts {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.help-contacts p {
+    margin: 8px 0;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.final-message {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 30px 0;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+}
+
+.final-message h2 {
+    color: white !important;
+    background: none !important;
+    border: none !important;
+    margin: 0 0 15px 0 !important;
+    padding: 0 !important;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.final-message p {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.anti-bullying-actions {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #e2e8f0;
+}
+
+.close-btn {
+    background: linear-gradient(135deg, #48bb78, #38a169);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(72, 187, 120, 0.3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.close-btn:hover {
+    background: linear-gradient(135deg, #38a169, #2f855a);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(72, 187, 120, 0.4);
+}
+
+.anti-bullying-processed {
+    background-color: rgba(254, 178, 178, 0.3) !important;
+    padding: 2px 4px !important;
+    border-radius: 4px !important;
+    border: 1px dashed #e53e3e !important;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    .anti-bullying-modal {
+        margin: 10px;
+        max-width: calc(100% - 20px);
+    }
+    
+    .anti-bullying-modal-content {
+        padding: 20px;
+    }
+    
+    .anti-bullying-header h1 {
+        font-size: 22px;
+    }
+    
+    .anti-bullying-message h2 {
+        font-size: 20px;
+    }
+    
+    .anti-bullying-message h3 {
+        font-size: 18px;
+    }
+    
+    .anti-bullying-message p,
+    .anti-bullying-message li {
+        font-size: 14px;
+    }
+    
+    .final-message h2 {
+        font-size: 20px !important;
+    }
+    
+    .final-message p {
+        font-size: 16px;
+    }
+    
+    .close-btn {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}

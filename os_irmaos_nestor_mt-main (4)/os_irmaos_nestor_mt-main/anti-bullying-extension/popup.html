@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS IRMÃOS - Anti-Bullying</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="icons/icon48.png" alt="OS IRMÃOS" class="logo">
+            <h1>OS IRMÃOS</h1>
+            <p class="subtitle">Anti-Bullying Extension</p>
+        </div>
+
+        <div id="loginSection" class="section">
+            <h2>🔐 Acesso Restrito</h2>
+            <input type="password" id="passwordInput" placeholder="Digite a senha para acessar">
+            <button id="loginBtn">Entrar</button>
+            <div id="errorMsg" class="error-msg" style="display: none;">Senha incorreta!</div>
+        </div>
+
+        <div id="managementSection" class="section" style="display: none;">
+            <h2>📝 Gerenciar Palavras Bloqueadas</h2>
+            
+            <div class="add-word-section">
+                <input type="text" id="newWordInput" placeholder="Nova palavra para bloquear">
+                <button id="addWordBtn">Adicionar</button>
+            </div>
+
+            <div class="words-list">
+                <h3>Palavras Cadastradas:</h3>
+                <div id="wordsList"></div>
+            </div>
+
+            <div class="actions">
+                <button id="clearAllBtn" class="danger-btn">Limpar Todas</button>
+                <button id="logoutBtn">Sair</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Promovendo empatia e combatendo o bullying</p>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
