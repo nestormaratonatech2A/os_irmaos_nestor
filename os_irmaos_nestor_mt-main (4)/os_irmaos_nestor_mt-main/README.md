@@ -1,5 +1,9 @@
-# OS IRMÃOS - Extensão Anti-Bullying
-
+# OS IRMÃOS - Extensão Anti-Bullying 🤝🤝🤝🤝🤝
+👦 Pedro Henrique Gonçalves - 2°A
+👦 Gabriel Rodrigues Reis - 2°A
+👦 David Oliveira Morais - 2°A
+👦 Etore Tomaz Cardoso Cucolicchio - 2°A
+👦 Tiago Andrade da Silva - 3°B
 ## 🤝 Sobre a Extensão
 
 A extensão **OS IRMÃOS - Anti-Bullying** é uma ferramenta desenvolvida para combater o bullying e cyberbullying na internet, promovendo empatia e conscientização sobre as consequências desse tipo de comportamento.
