@@ -158,10 +158,8 @@ Desenvolvido com ❤️ pela equipe OS IRMÃOS, dedicada a criar um ambiente dig
 
 Para dúvidas, sugestões ou relatar problemas:
 
-- **Email**: contato@osirmaos.org.br
-- **Website**: www.osirmaos.org.br
-- **Redes Sociais**: @osirmaos
-
+- **Email do grupo**: nestormaratonatech@gmail.com
+- **Resposnsável PEC TECNOLOGIA Davi Antonino Nunes da Silva URESER**
+- **E-mail PEC: davi.silva@educacao.sp.gov.br**
 ---
-
 **"Juntos somos mais fortes contra o bullying!"** 🤝✨
