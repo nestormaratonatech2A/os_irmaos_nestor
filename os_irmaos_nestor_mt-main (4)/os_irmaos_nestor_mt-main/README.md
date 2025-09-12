@@ -4,6 +4,12 @@
 👦 David Oliveira Morais - 2°A
 👦 Etore Tomaz Cardoso Cucolicchio - 2°A
 👦 Tiago Andrade da Silva - 3°B
+👦 Luis Fernando Moreira da Silva Miranda - 3ºB
+
+## Professores
+👨‍🏫 Felipe Rodrigues dos Santos
+👨‍🏫 João Vitor Solano
+
 ## 🤝 Sobre a Extensão
 
 A extensão **OS IRMÃOS - Anti-Bullying** é uma ferramenta desenvolvida para combater o bullying e cyberbullying na internet, promovendo empatia e conscientização sobre as consequências desse tipo de comportamento.
