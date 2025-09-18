@@ -12,14 +12,14 @@
 
 ## 🤝 Sobre a Extensão
 
-A extensão **OS IRMÃOS - Anti-Bullying** é uma ferramenta desenvolvida para combater o bullying e cyberbullying na internet, promovendo empatia e conscientização sobre as consequências desse tipo de comportamento.
+A extensão **OS IRMÃOS - Anti-Adultização** é uma ferramenta desenvolvida para combater a sexualização infantil na internet, promovendo empatia e conscientização sobre as consequências desse tipo de comportamento.
 
 ### ✨ Funcionalidades
 
-- **🔒 Bloqueio Inteligente**: Detecta e bloqueia palavras relacionadas ao bullying e cyberbullying
+- **🔒 Bloqueio Inteligente**: Detecta e restringe o acesso a sites indesejados por pais e responsaveis
 - **🛡️ Proteção por Senha**: Acesso restrito ao gerenciamento com a senha "osirmaos"
 - **📚 Conscientização**: Exibe popup educativo com informações legais e de conscientização
-- **⚖️ Base Legal**: Inclui informações sobre leis brasileiras contra bullying e cyberbullying
+- **⚖️ Base Legal**: Inclui informações sobre leis brasileiras contra a sexualização infantil
 - **🎯 Customização**: Permite adicionar e remover palavras da lista de bloqueio
 - **🌟 Suporte**: Direciona usuários para o grupo "OS IRMÃOS" para ajuda
 
@@ -44,13 +44,13 @@ A extensão **OS IRMÃOS - Anti-Bullying** é uma ferramenta desenvolvida para c
 2. **Abra o Chrome** e digite `chrome://extensions/` na barra de endereços
 3. **Ative o "Modo do desenvolvedor"** no canto superior direito
 4. **Clique em "Carregar extensão sem compactação"**
-5. **Selecione a pasta** `anti-bullying-extension`
-6. A extensão será instalada e aparecerá na barra de ferramentas
+5. **Selecione a pasta** `anti-adultização-extension`
+7. A extensão será instalada e aparecerá na barra de ferramentas
 
 ### Mozilla Firefox
 
 1. **Baixe os arquivos** da extensão
-2. **Compacte a pasta** `anti-bullying-extension` em um arquivo .zip
+2. **Compacte a pasta** `anti-adultização-extension` em um arquivo .zip
 3. **Abra o Firefox** e digite `about:debugging` na barra de endereços
 4. **Clique em "Este Firefox"**
 5. **Clique em "Carregar extensão temporária"**
@@ -66,32 +66,25 @@ A extensão **OS IRMÃOS - Anti-Bullying** é uma ferramenta desenvolvida para c
 
 ### Gerenciamento de Palavras
 
-1. **Adicionar palavras**: Digite a palavra no campo e clique em "Adicionar"
-2. **Remover palavras**: Clique no botão "Remover" ao lado da palavra
-3. **Limpar todas**: Clique em "Limpar Todas" (requer confirmação)
+1. **Adicionar sites**: Digite o link do site no campo e clique em "Adicionar"
+2. **Remover sites**: Clique no botão "Remover" ao lado do link do site
+3. **Limpar todos**: Clique em "Limpar Todos" (requer confirmação)
 
 ### Funcionamento Automático
 
 - A extensão monitora **automaticamente** todas as páginas web
-- Quando uma palavra bloqueada é detectada:
-  - A palavra é **substituída por símbolos** (●●●)
-  - Um **popup educativo** é exibido
-  - O usuário recebe **informações sobre as consequências** do bullying
+- O site bloqueado nao aparece na aba de pesquisa do navegador
 
 ## ⚖️ Base Legal
 
 A extensão baseia-se nas seguintes leis brasileiras:
 
-- **Lei nº 13.185/2015** - Programa de Combate à Intimidação Sistemática (Bullying)
-- **Lei nº 14.811/2024** - Tipifica o cyberbullying como crime
-- **Código Penal Brasileiro** - Artigos sobre injúria, difamação e calúnia
-- **Marco Civil da Internet** - Responsabilização por conteúdo ofensivo
-
+- **Lei 8.069/1990** - É a base legal para a proteção de menores, punindo crimes como exploração sexual e pornografia infantil
 ## 🆘 Canais de Ajuda
 
 - **📞 Disque 100** - Direitos Humanos
-- **📞 180** - Central de Atendimento à Mulher
-- **📞 CVV 188** - Centro de Valorização da Vida
+- **📞 Coselho Tutelar** Da cidade
+- **📞 190** - Poliia Militar
 - **💻 SaferNet**: new.safernet.org.br
 - **🤝 Grupo OS IRMÃOS** - Suporte especializado
 
@@ -102,21 +95,16 @@ A extensão baseia-se nas seguintes leis brasileiras:
 - **Senha segura**: Acesso protegido por senha para evitar alterações não autorizadas
 - **Código aberto**: Transparência total sobre o funcionamento
 
-## 🎯 Palavras Padrão Bloqueadas
+## 🎯 Sites Padrão Bloqueados
 
-A extensão vem com uma lista padrão de palavras comumente usadas em situações de bullying:
-
-- Termos depreciativos sobre aparência física
-- Insultos relacionados à inteligência
-- Palavras discriminatórias
-- Termos ofensivos sobre características pessoais
+A extensão vem com uma lista padrão de sites que são considerados improprios para menores de idade
 
 ## 🛠️ Desenvolvimento
 
 ### Estrutura do Projeto
 
 ```
-anti-bullying-extension/
+anti-adultização-extension/
 ├── manifest.json          # Configuração da extensão
 ├── popup.html             # Interface do popup
 ├── popup.css              # Estilos do popup
