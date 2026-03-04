@@ -3,8 +3,6 @@
 👦 Gabriel Rodrigues Reis - 2°A
 👦 David Oliveira Morais - 2°A
 👦 Etore Tomaz Cardoso Cucolicchio - 2°A
-👦 Tiago Andrade da Silva - 3°B
-👦 Luis Fernando Moreira da Silva Miranda - 3ºB
 
 ## Professores
 👨‍🏫 Felipe Rodrigues dos Santos
