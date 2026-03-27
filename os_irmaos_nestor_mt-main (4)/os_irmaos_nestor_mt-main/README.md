@@ -82,7 +82,7 @@ A extensão baseia-se nas seguintes leis brasileiras:
 
 - **📞 Disque 100** - Direitos Humanos
 - **📞 Coselho Tutelar** Da cidade
-- **📞 190** - Poliia Militar
+- **📞 190** - Polícia Militar
 - **💻 SaferNet**: new.safernet.org.br
 - **🤝 Grupo OS IRMÃOS** - Suporte especializado
 
